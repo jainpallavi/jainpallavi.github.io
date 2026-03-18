@@ -914,4 +914,11 @@
     // Form submit
     function handleSubmit(e) {
       e.preventDefault();
-      const btn = e.target.querySelector('.
+      const btn = e.target.querySelector('.btn-send');
+      btn.textContent = '✓ Message sent!';
+      btn.style.background = '#16a34a';
+      setTimeout(() => { btn.textContent = 'Send message →'; btn.style.background = ''; }, 3000);
+    }
+  </script>
+</body>
+</html>
